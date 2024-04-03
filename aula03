@@ -1,0 +1,175 @@
+#Faça um programa que exiba seu nome na tela.
+#print('Mayene')
+
+#Escreva um programa que exiba o resultado de 2a x 3b, em que a vale 3 e b vale 5.
+#a = 3
+#b = 5
+#total = (2*a) * (3*b)
+#print(total)
+
+#Escreva um programa que calcule a soma de três variáveis e imprima o resultado na tela.
+#b = int(input(''))
+#c = int(input(''))
+#soma = a + b + c
+#print(soma)
+
+#Faça um programa que peça dois números inteiros. Imprima a soma desses dois números na tela.
+#num1 = int(input(''))
+#num2 = int(input(''))
+#soma = num1+num2
+#print(soma)
+
+#Escreva um programa que leia um valor em metros e o exiba convertido em milímetros.
+
+#valor = int(input(''))
+#convert = valor*1000
+#print(convert)
+
+#Escreva um programa que leia a quantidade de dias,
+#horas, minutos e segundos do usuário. Calcule o total
+#em segundos.
+
+#dias = int(input(''))
+#horas = int(input(''))
+#minutos = int(input(''))
+#segundos = int(input(''))
+#totalSegundos = segundos + minutos * 60 + horas * 3600 + dias * 86400
+#print(f'O total de segundo é {totalSegundos}')
+
+#Faça um programa que calcule o aumento de um
+#salário. Ele deve solicitar o valor do salário e a
+#porcentagem do aumento. Exiba o valor do aumento e
+#do novo salário. 
+
+#salario = float(input(''))
+#porcentagem = int(input(''))
+#novo = salario + ((porcentagem/100) *salario)
+#aumento = (porcentagem/100) *salario
+#print(f'Seu novo salario é {novo:.2f} e seu aumento {aumento:.2f}')
+
+#Faça um programa que solicite o preço de uma
+#mercadoria e o percentual de desconto. Exiba o valor do
+#desconto e o preço a pagar. 
+
+#preco = float(input(''))
+#percentual = int(input(''))
+#desconto = preco * (percentual/100)
+#pagar = preco - desconto
+#print(f'Seu desconto é de {desconto} e vai pagar {pagar}')
+
+#Escreva um programa que calcule o tempo de uma
+#viagem de carro. Pergunte a distância a percorrer e a
+#velocidade média esperada para a viagem.
+
+#distancia = float(input(''))
+#velocidade = float(input(''))
+#tempo = distancia/velocidade
+#print (f'Você chegara em {tempo} horas')
+
+#Escreva um programa que converta uma
+#temperatura digitada em ºC em ºF. A fórmula para essa
+#conversão é F = ((9 x C) / 5) + 32
+
+#temperatura = float(input(''))
+#conversao = ((9 * temperatura)/ 5) +32
+#print(f'Sua temperatura em °F é {conversao:.1f}')
+
+#Escreva um programa que pergunte a quantidade de
+#km percorridos por um carro alugado pelo usuário, assim
+#como a quantidade de dias pelos quais o carro foi
+#alugado. Calcule o preço a pagar, sabendo que o carro
+#custa R$60 por dia e R$0,15 por km rodado.
+
+#distancia = float(input(''))
+#dias = int(input(''))
+#preco = (distancia*0.15) + (60*dias)
+#print(f'Você tme que pagar {preco:.2f} reais')
+
+#Escreva um programa que receba 2 valores do tipo
+#inteiro x e y, e calcule o valor de z: z = (x2 + y2) / (x – y)2
+
+
+#x = int(input(''))
+#y = int(input(''))
+#z =  (x**2 + y**2) / (x-y)**2
+#print(z)
+
+#Escreva um programa que receba o salário de um
+#funcionário (float) e retorne o resultado do novo salário
+#com reajuste de 35%.
+
+#salario = float(input(''))
+#reajuste = salario * (35/100)
+#total = salario + reajuste
+#print(f'Seu novo salário é de {total:.2f} reais')
+
+
+#Escreva um programa que pergunte a velocidade do
+#carro de um usuário. Caso ultrapasse 80km/h, exiba
+#uma mensagem dizendo que o usuário foi multado.
+#Nesse caso, exiba o valor da multa, cobrando R$5 por
+#km acima de 80km/h.
+
+#velocidade = float(input("Qual é a velocidade do carro (em km/h)? "))
+#limiteVelocidade = 80
+#valorMultaPorKm = 5
+#if velocidade > limiteVelocidade:
+    #kmAcimaLimite = velocidade - limiteVelocidade
+    #valorMulta = kmAcimaLimite * valorMultaPorKm
+    #print(f"Você foi multado! Velocidade excedida em {kmAcimaLimite:.2f} km/h.")
+    #print(f"O valor da multa é de R${valorMulta:.2f}.")
+#else:
+    #print("Você está dentro do limite de velocidade. Dirija com segurança!")
+
+#Escreva um programa que leia três números e que
+#imprima o maior e o menor.
+#numero1 = float(input("Digite o primeiro número: "))
+#numero2 = float(input("Digite o segundo número: "))
+#numero3 = float(input("Digite o terceiro número: "))
+
+#maior = menor = numero1
+
+#if numero2 > maior:
+   # maior = numero2
+#if numero2 < menor:
+   # menor = numero2
+
+#if numero3 > maior:
+    #maior = numero3
+#if numero3 < menor:
+   # menor = numero3
+
+#print("O maior número é:", maior)
+#print("O menor número é:", menor)
+
+#Escreva um programa que pergunte o salário do
+#funcionário e calcule o valor do aumento. Para salários
+#superiores a R$1250,00, calcule um aumento de 10%.
+#Para inferiores ou iguais, de 15%
+
+#salario = float(input("Digite o salário do funcionário: "))
+#if salario > 1250.00:
+   # aumento = salario * 0.10
+#else:
+   # aumento = salario * 0.15
+#novo_salario = salario + aumento
+#print(f"O valor do aumento é de R${aumento:.2f}")
+#print(f"O novo salário é de R${novo_salario:.2f}")
+
+#Escreva um programa que pergunte a distância que
+#um passageiro deseja percorrer em km. Calcule o preço
+#da passagem, cobrando R$ 0,50 por km para viagens de
+#até 200 km e R$ 0,45 para viagens mais longas.
+#distancia = float(input("Digite a distância da viagem em km: "))
+
+#if distancia <= 200:
+ #   preco_passagem = distancia * 0.50
+#else:
+ #   preco_passagem = distancia * 0.45
+#print(f"O preço da passagem é R${preco_passagem:.2f}")
+
+
+
+
+
+
