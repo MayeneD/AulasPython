@@ -1,0 +1,60 @@
+mediafin = 0
+sem = 1
+
+while sem <= 2:
+
+    checks = []
+    sprints_sem = []
+
+
+    check1 = int(input(f"Checkpoint 1 do {sem}º semestre = "))
+    check2 = int(input(f"Checkpoint 2 do {sem}º semestre = "))
+    check3 = int(input(f"Checkpoint 3 do {sem}º semestre = "))
+
+
+    checks.extend([check1, check2, check3])
+
+
+    sprint1 = int(input(f"Sprint 1 do {sem}º semestre = "))
+    sprint2 = int(input(f"Sprint 2 do {sem}º semestre = "))
+
+
+    sprints_sem.extend([sprint1, sprint2])
+
+    gs = int(input(f"Global Solution do {sem}º semestre = "))
+    print()
+
+
+    menor_nota = check1
+
+
+    if check2 < menor_nota:
+        menor_nota = check2
+    if check3 < menor_nota:
+        menor_nota = check3
+
+
+    mediasem = (((sum(checks) + sum(sprints_sem) - menor_nota) / 4) * 0.4) + (gs * 0.6)
+
+
+    if sem == 1:
+        mediafin += mediasem * 0.4
+    elif sem == 2:
+        mediafin += mediasem * 0.6
+
+    sem += 1
+
+presenca = float(input("Presença anual em porcentagem = "))
+
+print(f"\nA média final = {mediafin:.0f}")
+
+
+if mediafin >= 60 and presenca >= 75:
+    print("Situação = Aprovado")
+    print(f"Presença = {presenca:.1f}%")
+elif 40 <= mediafin < 60 and presenca >= 75:
+    print("Situação = Exame")
+    print(f"Presença = {presenca:.1f}%")
+else:
+    print("Situação = Reprovado")
+    print(f"Presença = {presenca:.1f}%")
